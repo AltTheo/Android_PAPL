@@ -1,5 +1,5 @@
-0,1,45,-,it needs electricity
-1,2,47,You want to do a computer related task,-
+0,1,45,You have a task to complete,it needs electricity
+1,2,47,The task is a computer related one,-
 2,3,13,-,does the area have power
 3,4,46,-,is the voltage of the power good and safe?
 4,5,12,-,could any interruptions affect the creditibility of your work?
