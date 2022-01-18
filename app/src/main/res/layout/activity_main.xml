@@ -10,8 +10,9 @@
     <TextView
         android:id="@+id/textID2"
         android:layout_width="308dp"
-        android:layout_height="133dp"
+        android:layout_height="170dp"
         android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-black"
         android:text="Questions will show here"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +25,7 @@
         android:layout_width="305dp"
         android:layout_height="96dp"
         android:layout_marginTop="120dp"
+        android:fontFamily="sans-serif-black"
         android:text="Descriptions wil show here"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
