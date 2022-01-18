@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pixel3"
     tools:context=".WelcomeScreen">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="73dp"
         android:layout_marginTop="156dp"
         android:text="Please enter your name below"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,8 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="340dp"
         android:ems="10"
-        android:hint="Enter name here"
+        android:hint="@string/enter_name_here"
         android:inputType="textPersonName"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="424dp"
         android:text="agree?"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="584dp"
         android:onClick="HomePage"
-        android:text="Proceed to questions"
+        android:text="@string/proceed_to_questions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"

@@ -3,4 +3,6 @@
     <string name="textview">TextView</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
+    <string name="enter_name_here">Enter name here</string>
+    <string name="proceed_to_questions">Proceed to questions</string>
 </resources>

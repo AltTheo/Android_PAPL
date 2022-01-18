@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pixel2"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textID2"
-        android:layout_width="320dp"
-        android:layout_height="94dp"
-        android:layout_marginTop="124dp"
+        android:layout_width="308dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="80dp"
         android:text="Questions will show here"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textID" />
 
@@ -23,6 +25,7 @@
         android:layout_height="96dp"
         android:layout_marginTop="120dp"
         android:text="Descriptions wil show here"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
