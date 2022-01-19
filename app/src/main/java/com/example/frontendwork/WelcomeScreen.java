@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -15,7 +17,9 @@ public class WelcomeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_screen);
-        setTitle("task Helper (Generator)");
+        setTitle("Home");
+        MediaPlayer media = MediaPlayer.create(this, R.raw.sound);
+        media.start();
     }
 
     @SuppressLint("SetTextI18n")
@@ -25,6 +29,10 @@ public class WelcomeScreen extends AppCompatActivity {
 //        String name = tv.getText().toString();
 //        ((TextView) findViewById(R.id.wlcDisplay)).setText("HELLO THERE, "+name);
         startActivity(i);
+//
+//        Button b = findViewById(R.id.nextPage);
+//        MediaPlayer media = MediaPlayer.create(this, R.raw.sound);
+//        media.start();
     }
 
 
