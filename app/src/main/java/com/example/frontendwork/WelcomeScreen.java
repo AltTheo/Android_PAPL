@@ -37,20 +37,23 @@ public class WelcomeScreen extends AppCompatActivity {
             Toast.makeText(this,"Successful, Thank You",Toast.LENGTH_SHORT).show();
             startActivity(i);
         }
-//
+        ///***THIS BIT WAS FOR THE IMPLEMENTATION OF MUSIC***///
+        ///***THIS WOULD BE LEFT OUT OF THIS PROJECT FOR NOW***//
+        ///***NOTE IT FULLY WORKS**///
+
 //        Button b = findViewById(R.id.nextPage);
 //        MediaPlayer media = MediaPlayer.create(this, R.raw.sound);
-//        media.start();
+//        media.start();  //This starts the music on default on launch
     }
 
 //    public void soundClick(View v) {
 //        MediaPlayer media = MediaPlayer.create(this, R.raw.sound);
-//        media.start();
+//        media.start(); //This button starts the music playing
 //    }
 //
 //    public void soundOff(View v) {
 //        MediaPlayer media = MediaPlayer.create(this, R.raw.sound);
-//        media.end();
+//        media.end();  //This button stops or mutes the song
 //    }
 
 }

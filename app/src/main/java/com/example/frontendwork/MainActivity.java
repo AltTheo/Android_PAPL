@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView Description = findViewById(R.id.textID);
         TextView Question = findViewById(R.id.textID2);
+
         Description.setText(nodeMap.currentNode().getDescription() + "\n");
         Question.setText(nodeMap.currentNode().getQuestion() + "\n");
     }
@@ -92,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
 
         Description.setText(nodeMap.currentNode().getDescription() + "\n");
         Question.setText(nodeMap.currentNode().getQuestion() + "\n");
-
 
         if(nodeMap.currentNode().getDescription().equals("Good Job")||nodeMap.currentNode().getQuestion().equals("Task complete")){
             Toast.makeText(this, "COMPLETED, PRESS RESTART", Toast.LENGTH_SHORT).show();
