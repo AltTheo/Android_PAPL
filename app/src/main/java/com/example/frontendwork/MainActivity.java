@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         InputStream prc = getCSVRes();
-        nodeMap = new NodeMap(prc);    //This part allows to link the backend and manipulate it for the frontend code
+        nodeMap = new NodeMap(prc);    //Constructing the link for the backend with the frontend
 
         //This part displays the first part of the questions on the get go
 
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         Question.setText(nodeMap.currentNode().getQuestion() + "\n");
     }
 
+    //This part allows to link the backend and manipulate it for the frontend code
     protected InputStream getCSVRes() {
         Resources res = getResources();
         return res.openRawResource(R.raw.generator4);
@@ -75,9 +77,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static void move(NodeMap nodeMap, int direction){
-        if (nodeMap.currentNode().getQuestion().equals("-"))
-        {
-            nodeMap.noDecision(); }
+        if (nodeMap.currentNode().getQuestion().equals("-")) {
+            nodeMap.noDecision();
+        }
         nodeMap.decision(direction);
     }
 
@@ -88,15 +90,13 @@ public class MainActivity extends AppCompatActivity {
 
         TextView Question = findViewById(R.id.textID2);
 
-        if(Description.getText().equals("-")){
-            Description.setText("Tasks Tasks Tasks Tasks Tasks Tasks Tasks Tasks Tasks ");
-        }
-        else {
-            Description.setText(nodeMap.currentNode().getDescription() + "\n");
-        }
+        Description.setText(nodeMap.currentNode().getDescription() + "\n");
         Question.setText(nodeMap.currentNode().getQuestion() + "\n");
 
-        if(Description.getText().)
+
+        if(nodeMap.currentNode().getDescription().equals("Good Job")||nodeMap.currentNode().getQuestion().equals("Task complete")){
+            Toast.makeText(this, "COMPLETED, PRESS RESTART", Toast.LENGTH_SHORT).show();
+        }
 //        ((TextView) findViewById(R.id.textID)).setText(nodeMap.currentNode().getDescription() + "\n");
 //        ((TextView) findViewById(R.id.textID2)).setText(nodeMap.currentNode().getQuestion() + "\n");
     }

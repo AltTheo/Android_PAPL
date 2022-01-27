@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageSwitcher;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class WelcomeScreen extends AppCompatActivity {
 
@@ -33,6 +34,7 @@ public class WelcomeScreen extends AppCompatActivity {
             tv.setError("Please enter your name");
         }
         else{
+            Toast.makeText(this,"Successful, Thank You",Toast.LENGTH_SHORT).show();
             startActivity(i);
         }
 //
