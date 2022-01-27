@@ -5,4 +5,8 @@
     <string name="yes">Yes</string>
     <string name="enter_name_here">Enter name here</string>
     <string name="proceed_to_questions">Proceed to questions</string>
+    <string name="restart">restart</string>
+    <string name="descriptions_wil_show_here">Descriptions wil show here</string>
+    <string name="questions_will_show_here">Questions will show here</string>
+    <string name="the_app_logo">The app logo</string>
 </resources>
