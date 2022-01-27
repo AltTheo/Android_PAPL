@@ -22,8 +22,6 @@ public class WelcomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_screen);
         setTitle("Home");
-//        MediaPlayer media = MediaPlayer.create(this, R.raw.sound);
-//        media.start();
     }
 
     @SuppressLint("SetTextI18n")
@@ -37,16 +35,20 @@ public class WelcomeScreen extends AppCompatActivity {
         else{
             startActivity(i);
         }
-
 //
 //        Button b = findViewById(R.id.nextPage);
 //        MediaPlayer media = MediaPlayer.create(this, R.raw.sound);
 //        media.start();
     }
 
-    public void soundClick(View v) {
-        MediaPlayer media = MediaPlayer.create(this, R.raw.sound);
-        media.start();
-    }
+//    public void soundClick(View v) {
+//        MediaPlayer media = MediaPlayer.create(this, R.raw.sound);
+//        media.start();
+//    }
+//
+//    public void soundOff(View v) {
+//        MediaPlayer media = MediaPlayer.create(this, R.raw.sound);
+//        media.end();
+//    }
 
 }

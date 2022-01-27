@@ -30,12 +30,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         InputStream prc = getCSVRes();
-        nodeMap = new NodeMap(prc);
+        nodeMap = new NodeMap(prc);    //This part allows to link the backend and manipulate it for the frontend code
 
-        ((TextView) findViewById(R.id.textID)).setText(nodeMap.currentNode().getDescription() + "\n");
-        ((TextView) findViewById(R.id.textID2)).setText(nodeMap.currentNode().getQuestion() + "\n");
+        //This part displays the first part of the questions on the get go
 
-
+        TextView Description = findViewById(R.id.textID);
+        TextView Question = findViewById(R.id.textID2);
+        Description.setText(nodeMap.currentNode().getDescription() + "\n");
+        Question.setText(nodeMap.currentNode().getQuestion() + "\n");
     }
 
     protected InputStream getCSVRes() {
@@ -79,8 +81,23 @@ public class MainActivity extends AppCompatActivity {
         nodeMap.decision(direction);
     }
 
+    @SuppressLint("SetTextI18n")
     public void nodeDisplay(NodeMap nodeMap){
-        ((TextView) findViewById(R.id.textID)).setText(nodeMap.currentNode().getDescription() + "\n");
-        ((TextView) findViewById(R.id.textID2)).setText(nodeMap.currentNode().getQuestion() + "\n");
+
+        TextView Description = findViewById(R.id.textID);
+
+        TextView Question = findViewById(R.id.textID2);
+
+        if(Description.getText().equals("-")){
+            Description.setText("Tasks Tasks Tasks Tasks Tasks Tasks Tasks Tasks Tasks ");
+        }
+        else {
+            Description.setText(nodeMap.currentNode().getDescription() + "\n");
+        }
+        Question.setText(nodeMap.currentNode().getQuestion() + "\n");
+
+        if(Description.getText().)
+//        ((TextView) findViewById(R.id.textID)).setText(nodeMap.currentNode().getDescription() + "\n");
+//        ((TextView) findViewById(R.id.textID2)).setText(nodeMap.currentNode().getQuestion() + "\n");
     }
 }
