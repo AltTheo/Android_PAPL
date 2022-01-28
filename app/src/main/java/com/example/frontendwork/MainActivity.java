@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         InputStream prc = getCSVRes();
         nodeMap = new NodeMap(prc);    //Constructing the link for the backend with the frontend
 
@@ -102,11 +103,9 @@ public class MainActivity extends AppCompatActivity {
 
         if (Desc.equals("Good Job") || Ques.equals("Task complete")) {
             Toast.makeText(this, "COMPLETED, PRESS RESTART", Toast.LENGTH_SHORT).show();
-        }
-        else if(Desc.equals("-")){
+        } else if (Desc.equals("-")) {
             Description.setText("");
-        }
-        else if(Ques.equals("-")){
+        } else if (Ques.equals("-")) {
             Question.setText("");
         }
 //        ((TextView) findViewById(R.id.textID)).setText(nodeMap.currentNode().getDescription() + "\n");
