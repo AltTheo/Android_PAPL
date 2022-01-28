@@ -33,7 +33,7 @@ public class WelcomeScreen extends AppCompatActivity {
         if (tv.getText().toString().equals("")) {
             tv.setError("Please enter your name");
         } else {
-            Toast.makeText(this, "Successful, Thank You", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Thank You "+name, Toast.LENGTH_SHORT).show();
             startActivity(i);
         }
         ///***THIS BIT WAS FOR THE IMPLEMENTATION OF MUSIC***///
