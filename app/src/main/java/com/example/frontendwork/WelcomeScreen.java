@@ -26,15 +26,14 @@ public class WelcomeScreen extends AppCompatActivity {
     }
 
     @SuppressLint("SetTextI18n")
-    public void HomePage(View v){
+    public void HomePage(View v) {
         Intent i = new Intent(this, MainActivity.class);
         EditText tv = findViewById(R.id.nameText);
         String name = tv.getText().toString();
-        if(tv.getText().toString().equals("")){
+        if (tv.getText().toString().equals("")) {
             tv.setError("Please enter your name");
-        }
-        else{
-            Toast.makeText(this,"Successful, Thank You",Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Successful, Thank You", Toast.LENGTH_SHORT).show();
             startActivity(i);
         }
         ///***THIS BIT WAS FOR THE IMPLEMENTATION OF MUSIC***///

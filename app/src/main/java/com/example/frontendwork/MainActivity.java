@@ -55,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 move(nodeMap, 1);
                 nodeDisplay(nodeMap);
-            }});
+            }
+        });
 
 //        ((TextView) findViewById(R.id.textID)).setText(nodeMap.currentNode().getQuestion());
 //        (Button) findViewById(R.id.button).setOnClickListener();
@@ -67,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 move(nodeMap, 2);
                 nodeDisplay(nodeMap);
-            }});
+            }
+        });
 //        Toast.makeText(this, "you clicked No", Toast.LENGTH_SHORT).show();
 //        ((TextView) findViewById(R.id.textID)).setText("No");
     }
@@ -77,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);    //this does like a refresh
     }
 
-    public static void move(NodeMap nodeMap, int direction){
+    public static void move(NodeMap nodeMap, int direction) {
         if (nodeMap.currentNode().getQuestion().equals("-")) {
             nodeMap.noDecision();
         }
@@ -85,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @SuppressLint("SetTextI18n")
-    public void nodeDisplay(NodeMap nodeMap){
+    public void nodeDisplay(NodeMap nodeMap) {
 
         TextView Description = findViewById(R.id.textID);
 
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         Description.setText(nodeMap.currentNode().getDescription() + "\n");
         Question.setText(nodeMap.currentNode().getQuestion() + "\n");
 
-        if(nodeMap.currentNode().getDescription().equals("Good Job")||nodeMap.currentNode().getQuestion().equals("Task complete")){
+        if (nodeMap.currentNode().getDescription().equals("Good Job") || nodeMap.currentNode().getQuestion().equals("Task complete")) {
             Toast.makeText(this, "COMPLETED, PRESS RESTART", Toast.LENGTH_SHORT).show();
         }
 //        ((TextView) findViewById(R.id.textID)).setText(nodeMap.currentNode().getDescription() + "\n");
